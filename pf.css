@@ -10,14 +10,6 @@ html{
   scroll-behavior: smooth;
 }
 
-
-
-
-
-
-
-
-
 .container{
     position: relative;
     width: 100%;
@@ -222,10 +214,6 @@ header{
         background-position: 0% 50%;
     }
 }
-
-
-
-
 
 .info-section {
     padding: 50px;

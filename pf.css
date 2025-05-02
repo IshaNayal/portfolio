@@ -6,6 +6,18 @@ body{
 
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
 .container{
     position: relative;
     width: 100%;
@@ -241,7 +253,7 @@ header{
     padding: 25px 20px;
     border-radius: 20px;
     width: 350px;
-    height: 500x;
+    height: 350px;
     text-align: center;
     box-shadow: 0 8px 16px rgba(0,0,0,0.4);
     transition: transform 0.4s, 0.4s;
@@ -315,7 +327,7 @@ header{
     position: relative;
     cursor: pointer;
     min-width: 400px;
-    transition: 0,5s;
+    transition: 0.5s;
     mix-blend-mode: difference;
   }
 
@@ -444,7 +456,7 @@ header{
     transition: 0.3s;
   }
 
-  .project-inf51 h1{
+  .project-inf5 h1{
     font-size: 25px;
     font-weight: bold;
     text-wrap: nowrap;
@@ -503,7 +515,8 @@ header{
     align-items: center;
     gap: 10%;
     justify-content: center;
-    background-color: rgb(255, 245, 245) /* Optional for contrast */
+    background-color: rgba(255, 255, 255, 0.1); /* Optional for contrast */   
+    backdrop-filter: blur(10px);
     padding: 20px;
     border: 2px solid  #5d6de8;
     border-radius: 20px;
@@ -537,7 +550,7 @@ header{
     content: '';
     position: absolute;
     width: 2px;
-    background-color: #ffffff;
+    background-color: #070707;
     top: 0;
     bottom: 0;
     left: 53%;  
@@ -759,6 +772,102 @@ header{
 
 .animated-content .fade-slide:nth-child(3) {
   animation-delay: 0.6s;
+}
+
+
+/* Contact Section */
+.contact-section{
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  align-items: center;
+  position: relative;
+
+}
+
+.contact-section h1{
+  position: absolute;
+  top: 10%;
+  left: 40%;
+}
+
+.social-box{
+  display: flex;
+  flex-direction: column;
+  gap:25px;
+}
+
+.social-box i{
+  color: #727fde;
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.social-icons a i{
+  color: #f8f8f8;
+  margin-top: 40px;
+}
+
+.contact-box p{
+  max-width: 400px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+.contact-box input{
+  padding: 7.5px 30px;
+  background-color: #f8f8f8;
+  width: 80%;
+  height: 25px;
+  border:none ;
+  outline: none;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.contact-box button{
+  margin-top: 30px;
+  color: #727fde;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid purple;
+  border-color: #fcfcfc;
+  box-shadow: #d5ff02;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+
+.contact-box button:hover{
+  box-shadow: 0 0  crimson;
+  opacity: 0.7;
+
+}
+
+footer{
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  align-items: center;
+  height: 70px;
+  background-color: #f8d304;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  z-index: 999;
+}
+
+footer h1{
+  font-size: 30px;
+}
+
+/*  blur effect animation */
+
+.spaced-section{
+  margin-bottom: 60px;
 }
 
 

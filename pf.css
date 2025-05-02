@@ -1,0 +1,108 @@
+
+
+<style>
+  .my-projects { /* Or .experience if you created a new section */
+    padding: 40px 20px;
+    position: relative;
+  }
+
+  .section-title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #ccc;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+  }
+
+  .timeline-item {
+    padding: 10px 0;
+    width: 50%;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    top: 18px;
+    right: -15px;
+  }
+
+  .timeline-item.left {
+    left: 0;
+    padding-right: 30px;
+  }
+
+  .timeline-item.left::after {
+    left: auto;
+    right: -15px;
+  }
+
+  .timeline-item.right {
+    left: 50%;
+    padding-left: 30px;
+  }
+
+  .timeline-item.right::after {
+    left: -15px;
+    right: auto;
+  }
+
+  .timeline-content {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .timeline-content h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  .timeline-date {
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .timeline::before {
+      left: 10px;
+    }
+
+    .timeline-item {
+      width: 100%;
+      padding-left: 30px;
+      padding-right: 0;
+    }
+
+    .timeline-item.left,
+    .timeline-item.right {
+      left: 0;
+    }
+
+    .timeline-item::after {
+      left: 5px;
+      right: auto;
+    }
+  }
+</style>
